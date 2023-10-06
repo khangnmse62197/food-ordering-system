@@ -1,7 +1,3 @@
-DROP SCHEMA IF EXISTS customer CASCADE;
-
-CREATE SCHEMA customer;
-
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
 CREATE TABLE customer.customers
