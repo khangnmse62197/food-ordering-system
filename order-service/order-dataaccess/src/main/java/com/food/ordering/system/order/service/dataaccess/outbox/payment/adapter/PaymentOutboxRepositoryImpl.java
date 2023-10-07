@@ -1,5 +1,6 @@
 package com.food.ordering.system.order.service.dataaccess.outbox.payment.adapter;
 
+import com.food.ordering.system.order.service.dataaccess.outbox.payment.entity.PaymentOutboxEntity;
 import com.food.ordering.system.order.service.dataaccess.outbox.payment.exception.PaymentOutboxNotFoundException;
 import com.food.ordering.system.order.service.dataaccess.outbox.payment.mapper.PaymentOutboxDataAccessMapper;
 import com.food.ordering.system.order.service.dataaccess.outbox.payment.repository.PaymentOutboxJpaRepository;
@@ -29,10 +30,11 @@ public class PaymentOutboxRepositoryImpl implements PaymentOutboxRepository {
 
     @Override
     public OrderPaymentOutboxMessage save(OrderPaymentOutboxMessage orderPaymentOutboxMessage) {
+        PaymentOutboxEntity entity = paymentOutboxDataAccessMapper
+                .orderPaymentOutboxMessageToOutboxEntity(orderPaymentOutboxMessage);
         return paymentOutboxDataAccessMapper
                 .paymentOutboxEntityToOrderPaymentOutboxMessage(paymentOutboxJpaRepository
-                        .save(paymentOutboxDataAccessMapper
-                                .orderPaymentOutboxMessageToOutboxEntity(orderPaymentOutboxMessage)));
+                        .save(entity));
     }
 
     @Override

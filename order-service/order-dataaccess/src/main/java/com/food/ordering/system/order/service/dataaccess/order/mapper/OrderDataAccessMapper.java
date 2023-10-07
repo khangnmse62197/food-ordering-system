@@ -7,9 +7,9 @@ import com.food.ordering.system.order.service.dataaccess.order.entity.OrderItemE
 import com.food.ordering.system.order.service.domain.entity.Order;
 import com.food.ordering.system.order.service.domain.entity.OrderItem;
 import com.food.ordering.system.order.service.domain.entity.Product;
-import com.food.ordering.system.order.service.domain.valueobject.OrderItemId;
-import com.food.ordering.system.order.service.domain.valueobject.StreetAddress;
-import com.food.ordering.system.order.service.domain.valueobject.TrackingId;
+import com.food.ordering.system.order.service.domain.vo.OrderItemId;
+import com.food.ordering.system.order.service.domain.vo.StreetAddress;
+import com.food.ordering.system.order.service.domain.vo.TrackingId;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;

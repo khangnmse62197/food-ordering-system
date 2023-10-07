@@ -13,7 +13,7 @@ import com.food.ordering.system.order.service.domain.event.OrderPaidEvent;
 import com.food.ordering.system.order.service.domain.outbox.model.approval.OrderApprovalEventPayload;
 import com.food.ordering.system.order.service.domain.outbox.model.approval.OrderApprovalEventProduct;
 import com.food.ordering.system.order.service.domain.outbox.model.payment.OrderPaymentEventPayload;
-import com.food.ordering.system.order.service.domain.valueobject.StreetAddress;
+import com.food.ordering.system.order.service.domain.vo.StreetAddress;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
