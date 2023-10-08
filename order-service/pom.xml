@@ -12,11 +12,11 @@
     <artifactId>order-service</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>order-domain</module>
         <module>order-rest</module>
         <module>order-data-jpa</module>
         <module>order-messaging</module>
         <module>order-bootstrap</module>
         <module>order-application-service</module>
+        <module>order-domain-v2</module>
     </modules>
 </project>

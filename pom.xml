@@ -32,6 +32,8 @@
         <kafka-avro-serializer.version>7.0.1</kafka-avro-serializer.version>
         <avro.version>1.11.0</avro.version>
         <assertj.version>3.24.2</assertj.version>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
     </properties>
 
     <dependencyManagement>
@@ -48,7 +50,7 @@
             </dependency>
             <dependency>
                 <groupId>com.food.ordering.system</groupId>
-                <artifactId>order-domain</artifactId>
+                <artifactId>order-domain-v2</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
