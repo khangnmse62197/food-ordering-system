@@ -3,8 +3,8 @@ package com.food.ordering.system.order.service.dataaccess.outbox.restaurantappro
 import com.food.ordering.system.order.service.dataaccess.outbox.restaurantapproval.exception.ApprovalOutboxNotFoundException;
 import com.food.ordering.system.order.service.dataaccess.outbox.restaurantapproval.mapper.ApprovalOutboxDataAccessMapper;
 import com.food.ordering.system.order.service.dataaccess.outbox.restaurantapproval.repository.ApprovalOutboxJpaRepository;
-import com.food.ordering.system.order.service.domain.outbox.model.approval.OrderApprovalOutboxMessage;
-import com.food.ordering.system.order.service.domain.ports.output.repository.ApprovalOutboxRepository;
+import com.food.ordering.system.order.application.outbox.model.approval.OrderApprovalOutboxMessage;
+import com.food.ordering.system.order.application.ports.output.repository.ApprovalOutboxRepository;
 import com.food.ordering.system.outbox.OutboxStatus;
 import com.food.ordering.system.saga.SagaStatus;
 import org.springframework.stereotype.Component;

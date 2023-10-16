@@ -1,11 +1,11 @@
 package com.food.ordering.system.order.service.messaging.mapper;
 
 import com.food.ordering.system.kafka.order.avro.model.*;
-import com.food.ordering.system.order.service.domain.dto.message.CustomerModel;
-import com.food.ordering.system.order.service.domain.dto.message.PaymentResponse;
-import com.food.ordering.system.order.service.domain.dto.message.RestaurantApprovalResponse;
-import com.food.ordering.system.order.service.domain.outbox.model.approval.OrderApprovalEventPayload;
-import com.food.ordering.system.order.service.domain.outbox.model.payment.OrderPaymentEventPayload;
+import com.food.ordering.system.order.application.dto.message.CustomerModel;
+import com.food.ordering.system.order.application.dto.message.PaymentResponse;
+import com.food.ordering.system.order.application.dto.message.RestaurantApprovalResponse;
+import com.food.ordering.system.order.application.outbox.model.approval.OrderApprovalEventPayload;
+import com.food.ordering.system.order.application.outbox.model.payment.OrderPaymentEventPayload;
 import org.springframework.stereotype.Component;
 
 import java.util.UUID;

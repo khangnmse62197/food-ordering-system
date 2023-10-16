@@ -17,6 +17,6 @@
         <module>order-messaging</module>
         <module>order-bootstrap</module>
         <module>order-application-service</module>
-        <module>order-domain-v2</module>
+        <module>order-domain</module>
     </modules>
 </project>

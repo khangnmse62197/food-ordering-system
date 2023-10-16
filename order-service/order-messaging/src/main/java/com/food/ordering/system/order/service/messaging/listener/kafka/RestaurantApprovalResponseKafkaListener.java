@@ -3,9 +3,8 @@ package com.food.ordering.system.order.service.messaging.listener.kafka;
 import com.food.ordering.system.kafka.consumer.KafkaConsumer;
 import com.food.ordering.system.kafka.order.avro.model.OrderApprovalStatus;
 import com.food.ordering.system.kafka.order.avro.model.RestaurantApprovalResponseAvroModel;
-import com.food.ordering.system.order.service.domain.entity.Order;
-import com.food.ordering.system.order.service.domain.exception.OrderNotFoundException;
-import com.food.ordering.system.order.service.domain.ports.input.message.listener.restaurantapproval.RestaurantApprovalResponseMessageListener;
+import com.food.ordering.system.order.domain.exception.OrderNotFoundException;
+import com.food.ordering.system.order.application.ports.input.message.listener.restaurantapproval.RestaurantApprovalResponseMessageListener;
 import com.food.ordering.system.order.service.messaging.mapper.OrderMessagingDataMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.dao.OptimisticLockingFailureException;
@@ -17,7 +16,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-import static com.food.ordering.system.order.service.domain.entity.Order.FAILURE_MESSAGE_DELIMITER;
+import static com.food.ordering.system.order.domain.entity.Order.FAILURE_MESSAGE_DELIMITER;
 
 @Slf4j
 @Component
